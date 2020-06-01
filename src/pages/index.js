@@ -1,4 +1,5 @@
 import React from "react"
+import { Grid } from "@material-ui/core"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -8,7 +9,10 @@ import Layout from "../components/layout"
 const IndexPage = () => {
   return (
     <Layout>
-      <h1>Material UI</h1>
+      <Grid container direction="column">
+        <Grid item>This is Header</Grid>
+        <Grid item>This is Content</Grid>
+      </Grid>
     </Layout>
   )
 }
